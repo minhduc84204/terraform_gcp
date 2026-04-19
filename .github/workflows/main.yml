@@ -26,15 +26,6 @@ jobs:
     - name: Set up gcloud
       uses: google-github-actions/setup-gcloud@v2
 
-    - name: Debug project id
-      run: |
-        if [ -z "$TF_VAR_project_id" ]; then
-          echo "project_id is EMPTY"
-          exit 1
-        else
-          echo "project_id is set"
-        fi
-
     - name: Terraform Init
       run: terraform init
 
