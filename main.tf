@@ -39,7 +39,7 @@ resource "google_compute_instance" "vm_instance" {
   }
 
   # Allow HTTP traffic
-  tags = ["http-server","http-servers"]
+  tags = ["http-server","http-servers","ssh"]
 
   # Startup script to install NGINX
   metadata_startup_script = <<-EOF
