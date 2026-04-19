@@ -35,6 +35,6 @@ variable "instance_names" {
 #  type    = list(string)
 #  default = ["vm1", "vm2"]
 #}
-variable "user_password" {
-    sensitive = true
-}
+#variable "user_password" {
+#    sensitive = true
+#}
